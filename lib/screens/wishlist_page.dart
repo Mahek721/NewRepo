@@ -1,6 +1,5 @@
+import 'package:elite_ecommerce/constants/custom_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class WishListScreen extends StatefulWidget {
   const WishListScreen({super.key});
@@ -12,6 +11,17 @@ class WishListScreen extends StatefulWidget {
 class _WishListScreenState extends State<WishListScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Wishlist",style: TextStyle(color: n10,fontWeight: FontWeight.bold),),
+        backgroundColor: Colors.transparent,
+        elevation: 0.0,
+      ),
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Column(),
+        ),
+      ),
+    );
   }
 }
