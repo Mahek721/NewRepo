@@ -17,3 +17,27 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+// for user authentications --------------------
+
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+  
+//   @override
+//   Widget build(BuildContext context) {
+//     return GetMaterialApp(
+//       title: 'Flutter Demo',
+//       debugShowCheckedModeBanner: false,
+//       home: FutureBuilder(
+//         future: RememberUserPrefs.readUserInfo(),
+//         builder: (context, dataSnapshot) {
+//           if(dataSnapshot.data == null) {
+//             return LoginScreen();
+//           } else {
+//             return UserMainScreen();
+//           }
+//         },
+//       ),
+//     );
+//   }
+// }
