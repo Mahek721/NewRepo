@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Elite',
+      title: 'Elite Ecommerce',
       debugShowCheckedModeBanner: false,
       home: MainScreen(),
     );
