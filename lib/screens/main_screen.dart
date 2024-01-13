@@ -1,7 +1,9 @@
 import 'package:elite_ecommerce/constants/custom_colors.dart';
 import 'package:elite_ecommerce/screens/cart_page.dart';
 import 'package:elite_ecommerce/screens/categiories_page.dart';
+import 'package:elite_ecommerce/screens/home_page.dart';
 import 'package:elite_ecommerce/screens/profile_page.dart';
+import 'package:elite_ecommerce/screens/wishlist_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
@@ -16,9 +18,9 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
 
   List Pages = [
-    Center(child: Text("Home Page"),),
+    HomeScreen(),
     CategoriesScreen(),
-    Center(child: Text("Wishlist"),),
+    WishListScreen(),
     CartScreen(),
     ProfileScreen(),
   ];

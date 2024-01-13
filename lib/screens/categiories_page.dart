@@ -18,6 +18,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
         elevation: 0.0,
       ),
       body: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
         child: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,

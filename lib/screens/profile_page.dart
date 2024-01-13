@@ -18,6 +18,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         elevation: 0.0,
       ),
       body: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
         child: SafeArea(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15,),
